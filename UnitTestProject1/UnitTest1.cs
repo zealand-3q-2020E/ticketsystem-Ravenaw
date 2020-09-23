@@ -62,5 +62,15 @@ namespace UnitTestProject1
 
             Assert.ThrowsException<ArgumentOutOfRangeException>((() => mc.SetLicensePlate("44444444")));
         }
+
+        [TestMethod]
+        public void TestMethod6()
+        {
+            ClassLibrary.MC mc = new MC();
+
+            mc.EnableDiscount();
+
+            Assert.AreEqual(mc.Price(), 118.75);
+        }
     }
 }
