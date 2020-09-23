@@ -4,7 +4,7 @@ namespace ClassLibrary
 {
     public class Car
     {
-        public string LicencePlate;
+        public string LicensePlate;
         public DateTime Date;
 
         /// <summary>
@@ -23,6 +23,22 @@ namespace ClassLibrary
         public string VehicleType()
         {
             return "Car";
+        }
+    }
+
+    public class MC
+    {
+        public string LicensePlate;
+        public DateTime Date;
+
+        public double Price()
+        {
+            return 125;
+        }
+
+        public string Vehicle()
+        {
+            return "MC";
         }
     }
 }

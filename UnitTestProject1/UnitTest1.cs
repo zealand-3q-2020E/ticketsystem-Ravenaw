@@ -28,5 +28,26 @@ namespace UnitTestProject1
             Assert.AreEqual(type, "Car");
         }
 
+        [TestMethod]
+        public void TestMethod3()
+        {
+            double price;
+            ClassLibrary.MC mc = new MC();
+
+            price = mc.Price();
+
+            Assert.AreEqual(price, 125);
+        }
+
+        [TestMethod]
+        public void TestMethod4()
+        {
+            string type;
+            ClassLibrary.MC mc = new MC();
+
+            type = mc.Vehicle();
+
+            Assert.AreEqual(type, "MC");
+        }
     }
 }
