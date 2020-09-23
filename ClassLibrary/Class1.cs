@@ -2,16 +2,21 @@
 
 namespace ClassLibrary
 {
-    public class Car
+    public abstract class Vehicle
     {
         public string LicensePlate;
         public DateTime Date;
 
+        public abstract double Price();
+        public abstract string VehicleType();
+    }
+    public class Car : Vehicle
+    {
         /// <summary>
         /// Method to get the price
         /// </summary>
         /// <returns> double == 240</returns>
-        public double Price()
+        public override double Price()
         {
             return 240;
         }
@@ -20,23 +25,20 @@ namespace ClassLibrary
         /// Method to get vehicle type
         /// </summary>
         /// <returns> string == Car</returns>
-        public string VehicleType()
+        public override string VehicleType()
         {
             return "Car";
         }
     }
 
-    public class MC
+    public class MC : Vehicle
     {
-        public string LicensePlate;
-        public DateTime Date;
-
-        public double Price()
+        public override double Price()
         {
             return 125;
         }
 
-        public string Vehicle()
+        public override string VehicleType()
         {
             return "MC";
         }

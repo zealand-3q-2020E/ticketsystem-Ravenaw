@@ -45,7 +45,7 @@ namespace UnitTestProject1
             string type;
             ClassLibrary.MC mc = new MC();
 
-            type = mc.Vehicle();
+            type = mc.VehicleType();
 
             Assert.AreEqual(type, "MC");
         }
