@@ -9,6 +9,18 @@ namespace ClassLibrary
 
         public abstract double Price();
         public abstract string VehicleType();
+
+        public void SetLicensePlate(string plateNumber)
+        {
+            if (plateNumber.Length <= 7)
+            {
+                LicensePlate = plateNumber;
+            }
+            else
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+        }
     }
     public class Car : Vehicle
     {

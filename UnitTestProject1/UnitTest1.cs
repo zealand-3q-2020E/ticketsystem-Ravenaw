@@ -1,3 +1,4 @@
+using System;
 using ClassLibrary;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -48,6 +49,18 @@ namespace UnitTestProject1
             type = mc.VehicleType();
 
             Assert.AreEqual(type, "MC");
+        }
+
+        [TestMethod]
+        public void TestMethod5()
+        {
+            ClassLibrary.MC mc=new MC();
+
+            mc.SetLicensePlate("4546");
+
+            Assert.AreEqual(mc.LicensePlate, "4546");
+
+            Assert.ThrowsException<ArgumentOutOfRangeException>((() => mc.SetLicensePlate("44444444")));
         }
     }
 }
