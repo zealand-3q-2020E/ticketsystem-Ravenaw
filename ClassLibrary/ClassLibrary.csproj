@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\raven\Documents\GitHub\ticketsystem-Ravenaw\ClassLibrary\ClassLibrary.xml</DocumentationFile>
+  </PropertyGroup>
+
 </Project>

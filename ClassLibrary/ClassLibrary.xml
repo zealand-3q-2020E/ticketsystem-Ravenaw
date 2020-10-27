@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClassLibrary</name>
+    </assembly>
+    <members>
+        <member name="M:ClassLibrary.Vehicle.SetLicensePlate(System.String)">
+            <summary>
+            Sets license plate
+            </summary>
+            <param name="plateNumber"></param>
+        </member>
+        <member name="M:ClassLibrary.Vehicle.EnableDiscount">
+            <summary>
+            Enables discount
+            </summary>
+        </member>
+        <member name="M:ClassLibrary.Car.Price">
+            <summary>
+            Method to get the price
+            </summary>
+            <returns>240 or -5%</returns>
+        </member>
+        <member name="M:ClassLibrary.Car.VehicleType">
+            <summary>
+            Method to get vehicle type
+            </summary>
+            <returns>Car</returns>
+        </member>
+        <member name="M:ClassLibrary.MC.Price">
+            <summary>
+            Method to get the price
+            </summary>
+            <returns>125 or -5%</returns>
+        </member>
+        <member name="M:ClassLibrary.MC.VehicleType">
+            <summary>
+            Method to get vehicle type
+            </summary>
+            <returns>MC</returns>
+        </member>
+    </members>
+</doc>
